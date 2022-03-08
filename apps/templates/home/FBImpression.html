@@ -1,0 +1,665 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} FB Impressions {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<!-- Bootstrap css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/css/bootstrap.min.css">
+<!-- Icomoon Font Icons css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/fonts/style.css">
+<!-- Main css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/css/main.css">
+
+
+<!-- *************
+    ************ Vendor Css Files *************
+************ -->
+{% endblock stylesheets %}
+
+{% block content %}		
+<div class="pcoded-main-container">
+	<div class="pcoded-content">
+			<!-- Page header start -->
+			<div class="page-header" style="margin-top: 0.1cm;">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">Home</li>
+					<li class="breadcrumb-item active">FB Impressions</li>
+				</ol>
+
+				
+			</div>
+			<!-- Page header end -->
+					<!-- Row start --> 
+					<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-eye1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>9500</h3>
+									<p>Impression</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-cart1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>50</h3>
+									<p>Total Ad's</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-bag1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>7500</h3>
+									<p>CTR</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-activity"></i>
+								</div>
+								<div class="sale-num">
+									<h3>$ 3500</h3>
+									<p>CPA</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row end -->
+                   
+					<!-- Second Row Start -->
+				
+                    <!--Second Row End-->
+					<!-- Row start -->
+         <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>No. of Visits</h5>
+                </div>
+                <div class="card-body">
+                    <div id="area-chart-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Impressions</h5>
+                </div>
+                <div class="card-body">
+                    <div class="toolbar btn-group">
+                        <button id="one_month" class="btn btn-sm btn-outline-primary">1M</button>
+                        <button id="six_months" class="btn btn-sm btn-outline-primary">6M</button>
+                        <button id="one_year" class="btn btn-sm btn-outline-primary active">1Y</button>
+                        <button id="ytd" class="btn btn-sm btn-outline-primary">YTD</button>
+                        <button id="all" class="btn btn-sm btn-outline-primary">ALL</button>
+                    </div>
+                    <div id="area-chart-2"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+					<!-- Row end -->
+			
+<!--Table1 Start-->
+<section class="content" style="padding-left: 0cm;padding-right:0 cm margin-top:30px;" >
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-12">
+		  <!-- /.card -->
+		  <div class="card">
+			<div class="card-header">
+			  <h3 class="card-title">FB Impressions</h3>
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body">
+			  <table  id="example" class="table table-striped table-bordered" style="width:100%">
+				<thead>
+					<tr>
+						<th>Ad Type</th>
+						<th>Device</th>
+						<th>Impression</th>
+						<th>CTR</th>
+						<th>CVR</th>
+						<th>CPA</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Resposive Search</td>
+						<td>Mobile</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+					<tr>
+						<td>Expandid Search</td>
+						<td>Desktop</td>
+						<td>44.20%</td>
+						<td>10.0</td>
+						<td>9.07%</td>
+						<td>$ 1.02%</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Ad Type</th>
+						<th>Device</th>
+						<th>Impression</th>
+						<th>CTR</th>
+						<th>CVR</th>
+						<th>CPA</th>
+					</tr>
+				</tfoot>
+			  </table>
+			</div>
+			<!-- /.card-body -->
+		  </div>
+		  <!-- /.card -->
+		</div>
+		<!-- /.col -->
+	  </div>
+	  <!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+  </section>
+
+<!--Table1 End-->
+				</div>
+				<!-- Main container end -->
+
+			</div>
+			<!-- Page content end -->
+
+		</div>
+		<!-- Page wrapper end -->
+        {% endblock content %}
+
+                     <!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<!-- Apex Chart -->
+<script src="/static/assets/js/plugins/apexcharts.min.js"></script>
+<!-- custom-chart js -->
+<script src="/static/assets/js/pages/dashboard-main.js"></script>
+	 <!-- Required jQuery first, then Bootstrap Bundle JS -->
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.bundle.min.js"></script>
+	 <script src="js/moment.js"></script>
+
+
+	 <!-- *************
+		 ************ Vendor Js Files *************
+	 ************* -->
+	 <!-- Slimscroll JS -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/slimscroll/slimscroll.min.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/slimscroll/custom-scrollbar.js"></script>
+
+	 <!-- Daterange -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/daterange/daterange.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/daterange/custom-daterange.js"></script>
+
+	 <!-- Polyfill JS -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/polyfill/polyfill.min.js"></script>
+
+	 <!-- Apex Charts -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/apexcharts.min.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/visitors.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/deals.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/income.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/customers.js"></script>
+
+	 <!-- Main JS -->
+	 <script src="js/main.js"></script>
+	 
+ <script src="/static/assets/js/plugins/apexcharts.min.js"></script>
+ <script src="/static/assets/js/pages/chart-apex.js"></script>
+
+
+
+{% endblock javascripts %}

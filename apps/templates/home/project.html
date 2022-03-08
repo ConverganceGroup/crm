@@ -1,0 +1,1047 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Sample Page {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+            <div class="page-block">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="page-header-title">
+                            <h5 class="m-b-10">Projects </h5>
+                        </div>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#!">Projects</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Project List</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+ 
+
+    <!-- Default box -->
+    <div class="card"  >
+      <div class="card-header">
+        <h3 class="card-title">Projects</h3>
+
+         <div class="card-tools">
+          <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+         <!-- <i class="fas fa-minus"></i>-->
+          </button>
+          <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+          <!--  <i class="fas fa-times"></i>-->
+          </button>
+        </div>
+      </div>
+      <div class="card-body p-0">
+        <table class="table table-striped projects">
+            <thead>
+                <tr>
+                    <th style="width: 1%">
+                        #
+                    </th>
+                    <th style="width: 20%">
+                        Project Name
+                    </th>
+                    <th style="width: 30%">
+                        Team Members
+                    </th>
+                    <th>
+                        Project Progress
+                    </th>
+                    <th style="width: 8%" class="text-center">
+                        Status
+                    </th>
+                    <th style="width: 20%">
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            Convergence Website
+                        </a>
+                        <br/>
+                        <small>
+                            Created 15.08.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item" ">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                 <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                            </div>
+                        </div>
+                        <small>
+                            68% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            Findlay Creek Website
+                        </a>
+                        <br/>
+                        <small>
+                            Created 30.08.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+                            </div>
+                        </div>
+                        <small>
+                            47% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            MarketingBooth
+                        </a>
+                        <br/>
+                        <small>
+                            Created 15.09.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                            </div>
+                        </div>
+                        <small>
+                            77% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            Traffic Generating 
+                        </a>
+                        <br/>
+                        <small>
+                            Created 29.09.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            </div>
+                        </div>
+                        <small>
+                            60% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                           Google Data Studio Dashboard
+                        </a>
+                        <br/>
+                        <small>
+                            Created 15.10.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar5.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
+                            </div>
+                        </div>
+                        <small>
+                            92% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                           Integrations
+                        </a>
+                        <br/>
+                        <small>
+                            Created 20.10.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                            </div>
+                        </div>
+                        <small>
+                            35% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                          Facebook Data Dump
+                        </a>
+                        <br/>
+                        <small>
+                            Created 10.11.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar5.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                            </div>
+                        </div>
+                        <small>
+                            87% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            Website Data Dump
+                        </a>
+                        <br/>
+                        <small>
+                            Created 20.10.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                            </div>
+                        </div>
+                        <small>
+                            77% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        #
+                    </td>
+                    <td>
+                        <a>
+                            API END Points
+                        </a>
+                        <br/>
+                        <small>
+                            Created 20.10.2021
+                        </small>
+                    </td>
+                    <td>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                            <li class="list-inline-item">
+                                <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar5.png" style="height: 2cm; width: 2cm;">
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="project_progress">
+                        <div class="progress progress-sm">
+                            <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                            </div>
+                        </div>
+                        <small>
+                            77% Complete
+                        </small>
+                    </td>
+                    <td class="project-state">
+                        <span class="badge badge-success">Success</span>
+                    </td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                            <i class="fas fa-folder">
+                            </i>
+                            View
+                        </a>
+                        <a class="btn btn-info btn-sm" href="#">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Edit
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="#">
+                            <i class="fas fa-trash">
+                            </i>
+                            Delete
+                        </a>
+                    </td>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                Convergence Website
+                            </a>
+                            <br/>
+                            <small>
+                                Created 15.08.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item" ">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                     <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+                                </div>
+                            </div>
+                            <small>
+                                68% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                Findlay Creek Website
+                            </a>
+                            <br/>
+                            <small>
+                                Created 30.08.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="47" aria-valuemin="0" aria-valuemax="100" style="width: 47%">
+                                </div>
+                            </div>
+                            <small>
+                                47% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                MarketingBooth
+                            </a>
+                            <br/>
+                            <small>
+                                Created 15.09.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                                </div>
+                            </div>
+                            <small>
+                                77% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                Traffic Generating 
+                            </a>
+                            <br/>
+                            <small>
+                                Created 29.09.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                </div>
+                            </div>
+                            <small>
+                                60% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                               Google Data Studio Dashboard
+                            </a>
+                            <br/>
+                            <small>
+                                Created 15.10.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar5.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%">
+                                </div>
+                            </div>
+                            <small>
+                                92% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                               Integrations
+                            </a>
+                            <br/>
+                            <small>
+                                Created 20.10.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar2.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%">
+                                </div>
+                            </div>
+                            <small>
+                                35% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                              Facebook Data Dump
+                            </a>
+                            <br/>
+                            <small>
+                                Created 10.11.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar5.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
+                                </div>
+                            </div>
+                            <small>
+                                87% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            #
+                        </td>
+                        <td>
+                            <a>
+                                Reports
+                            </a>
+                            <br/>
+                            <small>
+                                Created 20.10.2021
+                            </small>
+                        </td>
+                        <td>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar3.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                                <li class="list-inline-item">
+                                    <img alt="Avatar" class="table-avatar" src="/static/assets/images/avatar4.png" style="height: 2cm; width: 2cm;">
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="project_progress">
+                            <div class="progress progress-sm">
+                                <div class="progress-bar bg-green" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+                                </div>
+                            </div>
+                            <small>
+                                77% Complete
+                            </small>
+                        </td>
+                        <td class="project-state">
+                            <span class="badge badge-success">Success</span>
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    
+            </tbody>
+        </table>
+      </div>
+      <!-- /.card-body -->
+    </div>
+    <!-- /.card -->
+
+  </section>
+  <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}

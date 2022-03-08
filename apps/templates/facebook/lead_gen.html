@@ -1,0 +1,191 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Leads {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-content">
+            <div class="row">
+                <!-- account-section start -->
+                <div class="col-lg-6">
+                </div>
+                
+                <!-- account-section end -->
+ <!-- =========================================================== -->
+  <!-- Customer overview start -->
+  
+  <div class="col-lg-12">
+  <!-- Small Box (Stat card) -->
+  <h5 class="mb-2 mt-4"><b>Facebook Lead Analytics</b></h5>
+  <div class="row">
+    <!--unique-->
+    <div class="col-xl-3 col-md-6 col-12">
+        <div class="info-box bg-info">
+          <span class="info-box-icon bg-white text-info"><i class="ion ion-stats-bars"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-number">394</span>
+            <span class="info-box-text">Total Leads</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+    <!-- ./col -->
+    <div class="col-xl-3 col-md-6 col-12">
+        <div class="info-box bg-success">
+          <span class="info-box-icon bg-white text-success"><i class="ion ion-thumbsup"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-number">56</span>
+            <span class="info-box-text">Qualified Leads</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+
+      <!-- fix for small devices only -->
+      <div class="clearfix visible-sm-block"></div>
+
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="info-box bg-purple">
+          <span class="info-box-icon bg-white text-purple"><i class="ion ion-bag"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-number">90</span>
+            <span class="info-box-text">Disqualified Leads</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+      <div class="col-xl-3 col-md-6 col-12">
+        <div class="info-box bg-danger">
+          <span class="info-box-icon bg-white text-danger"><i class="ion ion-person-stalker"></i></span>
+
+          <div class="info-box-content">
+            <span class="info-box-number">151</span>
+            <span class="info-box-text">In Process</span>
+          </div>
+          <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+      </div>
+      <!-- /.col -->
+  </div>
+  <!-- /.row -->
+
+  <section>
+    <h5 class="mb-2 mt-4"><b>Select Date Range</b></h5>
+      <article>
+          <div class="three-calendars"></div>
+      </article>
+  </section> 
+  <br></br>
+
+    <div class="card table-card">
+                        <div class="card-header">
+                            <h5>Lead Generation Monitor Data</h5>
+                            <div class="card-header-right">
+                                <div class="btn-group card-option">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="feather icon-more-horizontal"></i>
+                                    </button>
+                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> maximize</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+                                        <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> collapse</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="nav nav-pills nav-fill mt-3 border-bottom pb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="feather icon-film m-r-5"></i> Lead Generation Data</a>
+        
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="table-responsive">
+                                        <div class="customer-scroll" style="height:420px;position:relative;">
+                                            <table class="table table-hover m-b-0">
+                                                <thead>
+                                                    <tr>
+                                                        <th><span>lead id</span></th>
+                                                        <th><span>locale <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>name <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>status <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>leads count <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>page name <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>created time <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                        <th><span>expired leads count <a class="help" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i class="feather icon-help-circle f-16"></i></a></span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    {% for item in data %}
+                                                    <tr>
+                                                        <td>{{item.lead_id}}</td>
+                                                        <td>{{item.locale}}
+                                                            
+                                                        </td>
+                                                        <td>{{item.name}}
+                                                            
+                                                        </td>
+                                                        <td>{{item.status}}
+                                                            
+                                                        </td>
+                                                        <td>{{item.leads_count}}
+                                                            
+                                                        </td>
+                                                        <td>{{item.page_name}}
+                                                           
+                                                        </td>
+                                                        <td>{{item.created_time}}
+                                                            
+                                                        </td>
+                                                        <td>{{item.expired_leads_count}}
+                                                            
+                                                        </td>
+                                                       
+                                                       
+                                                    </tr>
+                                                    {% endfor %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Customer overview end -->
+            </div>
+            <!-- [ Main Content ] end -->
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+    
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+    <!-- Apex Chart -->
+    <script src="/static/assets/js/plugins/apexcharts.min.js"></script>
+    <!-- custom-chart js -->
+    <script src="/static/assets/js/pages/dashboard-main.js"></script>
+
+{% endblock javascripts %}

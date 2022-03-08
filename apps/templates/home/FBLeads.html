@@ -1,0 +1,1156 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} FB LEADS {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}
+<!-- Bootstrap css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/css/bootstrap.min.css">
+<!-- Icomoon Font Icons css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/fonts/style.css">
+<!-- Main css -->
+<link rel="stylesheet" href="http://bootstrap.gallery/skyline/css/main.css">
+
+
+<!-- *************
+    ************ Vendor Css Files *************
+************ -->
+{% endblock stylesheets %}
+
+{% block content %}		
+<div class="pcoded-main-container">
+	<div class="pcoded-content">
+			<!-- Page header start -->
+			<div class="page-header" style="margin-top: -0.03cm;">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">Home</li>
+					<li class="breadcrumb-item active">FB Ad's Set</li>
+				</ol>
+
+				
+			</div>
+			<!-- Page header end -->
+		<div class="row">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-eye1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>9500</h3>
+									<p>Total Leads</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-cart1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>2500</h3>
+									<p>New Leads</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-bag1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>7500</h3>
+									<p>In Process</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-activity"></i>
+								</div>
+								<div class="sale-num">
+									<h3>3500</h3>
+									<p>Live Transfer</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Row end -->
+                   
+					<!-- Second Row Start -->
+					<div class="row gutters">
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-bag1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>9500</h3>
+									<p>Disqualified Leads</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-activity"></i>
+								</div>
+								<div class="sale-num">
+									<h3>2500</h3>
+									<p>Conversion</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-eye1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>7500</h3>
+									<p>Cost Per Conversion</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+							<div class="info-stats4">
+								<div class="info-icon">
+									<i class="icon-shopping-cart1"></i>
+								</div>
+								<div class="sale-num">
+									<h3>3500</h3>
+									<p>Total Spent </p>
+								</div>
+							</div>
+						</div>
+					</div>
+                    <!--Second Row End-->
+					<!-- Row start -->
+					<div class="row gutters">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<h5>Leads</h5>
+								</div>
+								<div class="card-body">
+									<div id="mixed-chart-1"></div>
+								</div>
+							</div>
+					</div>
+					<!-- Row end -->
+			
+<!--Table1 Start-->
+<section class="content" style="width: 90cm;">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-12">
+		  <!-- /.card -->
+		  <div class="card">
+			<div class="card-header">
+			  <h3 class="card-title">Lead's Information</h3>
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body">
+			  <table  id="example" class="table table-striped table-bordered" style="width:100%">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>EMAIL</th>
+						<th>Phone</th>
+						<th>Pipeline Stage</th>
+						<th>CAMPAIGN</th>
+						<th>ASSIGNED TO</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+					<tr>
+						<td>Rimsha Sehar</td>
+						<td>rimsha@sublimesoultions.org</td>
+						<td>090 6754329</td>
+						<td>📞 Live Transfer</td>
+						<td>xyz</td>
+						<td>ZachDonald</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th>Name</th>
+						<th>EMAIL</th>
+						<th>Phone</th>
+						<th>Pipeline Stage</th>
+						<th>CAMPAIGN</th>
+						<th>ASSIGNED TO</th>
+					</tr>
+				</tfoot>
+			  </table>
+			</div>
+			<!-- /.card-body -->
+		  </div>
+		  <!-- /.card -->
+		</div>
+		<!-- /.col -->
+	  </div>
+	  <!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+  </section>
+
+<!--Table1 End-->
+<!--Table2 Start-->
+<section class="content" style="width: 90cm;">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-12">
+		  <!-- /.card -->
+		  <div class="card">
+			<div class="card-header">
+			  <h3 class="card-title">Updated Lead</h3>
+			</div>
+			<!-- /.card-header -->
+			<div class="card-body">
+			  <table id="example1" class="table table-bordered table-striped">
+				<thead>
+				<tr>
+				  <th>Created Date</th>
+				  <th>Name</th>
+				  <th>Update Date </th>
+				  <th>Source</th>
+				  <th>Assigned To</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				  <td>10/11/2021</td>
+				  <td>Rimsha</td>
+				  <td>15/11/2021</td>
+				  <td>Facebook</td>
+				  <td>090 392994849</td>
+				</tr>
+				<tr>
+				  <td>10/11/2021</td>
+				  <td>Rimsha</td>
+				  <td>15/11/2021</td>
+				  <td>Facebook</td>
+				  <td>090 392994849</td>
+				</tr>
+				<tr>
+					<td>10/11/2021</td>
+					<td>Rimsha</td>
+					<td>15/11/2021</td>
+					<td>Facebook</td>
+					<td>090 392994849</td>
+				</tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>090 392994849</td>
+			  </tr>
+			  <tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>090 392994849</td>
+			  </tr>
+			  <tr>
+				  <td>10/11/2021</td>
+				  <td>Rimsha</td>
+				  <td>15/11/2021</td>
+				  <td>Facebook</td>
+				  <td>090 392994849</td>
+			  </tr>
+			  <td>10/11/2021</td>
+			  <td>Rimsha</td>
+			  <td>15/11/2021</td>
+			  <td>Facebook</td>
+			  <td>090 392994849</td>
+			</tr>
+			<tr>
+			  <td>10/11/2021</td>
+			  <td>Rimsha</td>
+			  <td>15/11/2021</td>
+			  <td>Facebook</td>
+			  <td>090 392994849</td>
+			</tr>
+			<tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>090 392994849</td>
+			</tr>
+			<td>10/11/2021</td>
+			<td>Rimsha</td>
+			<td>15/11/2021</td>
+			<td>Facebook</td>
+			<td>090 392994849</td>
+		  </tr>
+		  <tr>
+			<td>10/11/2021</td>
+			<td>Rimsha</td>
+			<td>15/11/2021</td>
+			<td>Facebook</td>
+			<td>090 392994849</td>
+		  </tr>
+		  <tr>
+			  <td>10/11/2021</td>
+			  <td>Rimsha</td>
+			  <td>15/11/2021</td>
+			  <td>Facebook</td>
+			  <td>090 392994849</td>
+		  </tr>
+		  <tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>Maria</td>
+			  </tr>
+			  <tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>Maria</td>
+			  </tr>
+			  <tr>
+				  <td>10/11/2021</td>
+				  <td>Rimsha</td>
+				  <td>15/11/2021</td>
+				  <td>Facebook</td>
+				  <td>Maria</td>
+			  </tr>
+			  <tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>Maria</td>
+			</tr>
+			<tr>
+			  <td>10/11/2021</td>
+			  <td>Rimsha</td>
+			  <td>15/11/2021</td>
+			  <td>Facebook</td>
+			  <td>Maria</td>
+			</tr>
+			<tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>Maria</td>
+			</tr>
+			<tr>
+				<td>10/11/2021</td>
+				<td>Rimsha</td>
+				<td>15/11/2021</td>
+				<td>Facebook</td>
+				<td>Maria</td>
+			</tr>
+			<tr>
+			  <td>10/11/2021</td>
+			  <td>Rimsha</td>
+			  <td>15/11/2021</td>
+			  <td>Facebook</td>
+			  <td>Maria</td>
+		  </tr>
+		  <tr>
+			<td>10/11/2021</td>
+			<td>Rimsha</td>
+			<td>15/11/2021</td>
+			<td>Facebook</td>
+			<td>Maria</td>
+		</tr>
+		<tr>
+		  <td>10/11/2021</td>
+		  <td>Rimsha</td>
+		  <td>15/11/2021</td>
+		  <td>Facebook</td>
+		  <td>Maria</td>
+	  </tr>
+	  <tr>
+		<td>10/11/2021</td>
+		<td>Rimsha</td>
+		<td>15/11/2021</td>
+		<td>Facebook</td>
+		<td>Maria</td>
+	</tr>
+	<tr>
+	  <td>10/11/2021</td>
+	  <td>Rimsha</td>
+	  <td>15/11/2021</td>
+	  <td>Facebook</td>
+	  <td>Maria</td>
+  </tr>
+  <tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+</td>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>  <tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>  <tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+  <tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>  <tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+<tr>
+	<td>10/11/2021</td>
+	<td>Rimsha</td>
+	<td>15/11/2021</td>
+	<td>Facebook</td>
+	<td>Maria</td>
+</tr>
+<tr>
+  <td>10/11/2021</td>
+  <td>Rimsha</td>
+  <td>15/11/2021</td>
+  <td>Facebook</td>
+  <td>Maria</td>
+</tr>
+				
+				</tr>
+				</tbody>
+				<tfoot>
+				<tr>
+					<th>Created Date</th>
+					<th>Name</th>
+					<th>Update Date </th>
+					<th>Source</th>
+					<th>Assigned To</th>
+				</tr>
+				</tfoot>
+			  </table>
+			</div>
+			<!-- /.card-body -->
+		  </div>
+		  <!-- /.card -->
+		</div>
+		<!-- /.col -->
+	  </div>
+	  <!-- /.row -->
+	</div>
+	<!-- /.container-fluid -->
+  </section>
+<!--Table2 End-->
+
+
+				
+
+				</div>
+				<!-- Main container end -->
+
+			</div>
+			<!-- Page content end -->
+
+		</div>
+		</div>
+		</div>
+	
+		</div>
+		<!-- Page wrapper end -->
+        {% endblock content %}
+
+        <!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+<!-- Apex Chart -->
+<script src="/static/assets/js/plugins/apexcharts.min.js"></script>
+<!-- custom-chart js -->
+<script src="/static/assets/js/pages/dashboard-main.js"></script>
+	 <!-- Required jQuery first, then Bootstrap Bundle JS -->
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/bootstrap.bundle.min.js"></script>
+	 <script src="js/moment.js"></script>
+
+
+	 <!-- *************
+		 ************ Vendor Js Files *************
+	 ************* -->
+	 <!-- Slimscroll JS -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/slimscroll/slimscroll.min.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/slimscroll/custom-scrollbar.js"></script>
+
+	 <!-- Daterange -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/daterange/daterange.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/daterange/custom-daterange.js"></script>
+
+	 <!-- Polyfill JS -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/polyfill/polyfill.min.js"></script>
+
+	 <!-- Apex Charts -->
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/apexcharts.min.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/visitors.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/deals.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/income.js"></script>
+	 <script src="http://bootstrap.gallery/skyline/vendor/apex/admin/customers.js"></script>
+
+	 <!-- Main JS -->
+	 <script src="js/main.js"></script>
+	 
+ <script src="/static/assets/js/plugins/apexcharts.min.js"></script>
+ <script src="/static/assets/js/pages/chart-apex.js"></script>
+
+
+
+{% endblock javascripts %}
