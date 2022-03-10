@@ -1,17 +1,6 @@
 from apps import db
 
 
-# class Results(db.Model):
-#     __tablename__ = 'Results'
-#     id = db.Column(db.Integer, primary_key=True)
-#     page_reach= db.Column(db.BigInteger(unsigned=True), unique=True)
-#     source = db.Column(db.String(64), unique=True)
-#     date = db.Column(db.String(64), unique=True)
-    
-
-#     def __str__(self)-> int:
-#         return self.page_reach
-
 
 class Leadgens(db.Model):
     __tablename__ = "Leadgens"
@@ -53,8 +42,33 @@ class Leadgens(db.Model):
 
 
 
-# class Campaign(db.Model):
-#     pass
+class Campaign(db.Model):
+    __tablename__ = "Campaign"
+    id = db.Column(db.Integer, primary_key=True,autoincrement=True)
+    campaign_id  = db.Column(db.String(256))
+    campaign_name = db.Column(db.String(256))
+    bid_startegy= db.Column(db.String(256))
+    budget_remainin = db.Column(db.String(256))
+    buying_type = db.Column(db.String(256))
+    objective = db.Column(db.String(256))
+    pacing_type = db.Column(db.String(256))
+    smart_promotion_type = db.Column(db.String(256))
+    status = db.Column(db.String(256))
+    start_time = db.Column(db.String(256))
+    end_time = db.Column(db.String(256))
 
-# class Adsets(db.Model):
-#     pass
+    def __init__(self,lead_id,locale,name,status,leads_count,page_name,created_time,expired_leads_count):
+        self.lead_id = lead_id
+        self.locale = locale
+        self.name = name
+        self.status = status
+        self.leads_count = leads_count
+        self.page_name = page_name
+        self.created_time = created_time
+        self.expired_leads_count = expired_leads_count
+        
+
+    @staticmethod
+    def save(self):
+        db.session.add(self)
+        db.session.commit()
