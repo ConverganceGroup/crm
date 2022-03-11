@@ -1,15 +1,14 @@
 from re import I
 from flask import jsonify
-from flask.helpers import url_for
-from flask.scaffold import F
 from flask.templating import render_template
 from apps import db
-from .models import Leadgens
+from .models import Leadgens,Campaign
+from .models import Campaign as comp
 from apps.facebook import blueprint
 import requests
 import json
 
-url = "https://graph.facebook.com/v12.0/100590515516281/leadgen_forms?access_token=EAAEfJmDPHNQBAAkKqr9zcHtb9mhhcONVU5rOnQhHZAk7Eyjxbr7k5ZABc0ESZBvUCW6ZAZA2o4JBiJ0MapwIZCf2WjOXNyDHpFCN1v5tUOXCNsi5jza9ytYptYmxmKBibAsYFUzN9BMGbE1H2tI2AhUk2ZBWP6IExlu7JPiw6kfhZCKj03Xiqc2BPLdG1YlfDPiCn65iIqyfZBeVO4QYPC5Ma&__activeScenarioIDs=[]&__activeScenarios=[]&debug=all&fields=leads_count,name,page,created_time,expired_leads_count,status,locale&format=json&limit=10&method=get&pretty=0&suppress_http_code=1&transport=cors"
+url = "https://graph.facebook.com/v12.0/110943320581164/leadgen_forms?access_token=EAAEfJmDPHNQBAJpDMxcMjeG4XTsZBPcfsOeDdbRgtmmga0Ef7l21ZCq3eJza1cqbX9DGaruUzegBdsURzAxZC0JG7Snu63vHCfyFVzyTux6DGn6c9zccKuHmg59zhZCZCHZCBr7ZCAyIiPIh4FbCcuQVy8e6qrY99T710v2cBpfsPEJbEQwDMirAgxgqFcDD9AVhdf2zVImmQZDZD&__activeScenarioIDs=[]&__activeScenarios=[]&debug=all&fields=leads_count,name,page,created_time,expired_leads_count,status,locale&format=json&limit=10&method=get&pretty=0&suppress_http_code=1&transport=cors"
 
 
 #url = "https://graph.facebook.com/v12.0/100590515516281/leadgen_forms?pretty=0&fields=leads_count%2Cname%2Cpage%2Ccreated_time%2Cexpired_leads_count%2Cstatus%2Clocale&limit=10&before=QVFIUnVLU1hVSy0tSDk1WnJiVEFOZAFIyNzM1TkJhWGJ2TWM3MGwzekdRU0xGdkt3R1g1Y19tQmwzZAm1EU2lKS19pczRmTl8wdGR2SC1DZA0wyenRWS1NMNTZAR"
@@ -38,3 +37,36 @@ def get_leads_gen():
             next = False
     
     return jsonify(json_response['data'])
+
+
+from facebook_business.api import FacebookAdsApi
+from facebook_business.adobjects.adaccount import AdAccount
+from facebook_business.adobjects.campaign import Campaign
+
+
+@blueprint.route("/get_campagins",methods=["GET"])
+def get_campagins():
+    try:
+        my_access_token = "EAAEfJmDPHNQBAJpDMxcMjeG4XTsZBPcfsOeDdbRgtmmga0Ef7l21ZCq3eJza1cqbX9DGaruUzegBdsURzAxZC0JG7Snu63vHCfyFVzyTux6DGn6c9zccKuHmg59zhZCZCHZCBr7ZCAyIiPIh4FbCcuQVy8e6qrY99T710v2cBpfsPEJbEQwDMirAgxgqFcDD9AVhdf2zVImmQZDZD"
+        my_app_id = '205274791646907'
+        my_app_secret = '5f239d35c302458afec9fb113434ab0c'
+        FacebookAdsApi.init(my_app_id, my_app_secret, my_access_token)
+        my_account = AdAccount('act_527655717872173')
+        campaigns = my_account.get_campaigns(fields=tuple(Campaign. _field_types.keys()))
+        # lst = []
+        # for index in range(len(campaigns)):
+        #     obj = {}
+        #     for key,value in campaigns[index].items():
+        #         obj[key] = value[0] if type(value) == list  else value
+        #     lst.append(obj)
+        # for item in lst:
+        #     obj_camp =comp(**item)
+        #     db.session.add(obj_camp)
+        #     db.session.commit()
+        return jsonify({
+            "code":200,
+            "status":"success",
+            "message":"add campaigns successfully!"
+        })
+    except Exception as e:
+        return jsonify(str(e))
